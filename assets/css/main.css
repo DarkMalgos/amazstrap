@@ -51,3 +51,19 @@ header {
     color: #ffffff;
     background-color: #feaf17;
 }
+
+header nav:last-child .nav-item .nav-link {
+    color: #171719;
+    padding: 0 10px 0 10px;
+}
+
+header nav:last-child .nav-item .nav-link:not(:last-child):hover {
+    color: #171719;
+    text-transform: uppercase;
+}
+
+header nav:last-child .nav-item .nav-link:last-child:hover {
+    color: #171719;
+    text-transform: uppercase;
+    padding-left: 5px;
+}
