@@ -1,0 +1,104 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: #171719;
+}
+
+@font-face {
+    font-family: 'butlermedium';
+    src: url('../fonts/butler_medium-webfont.woff2') format('woff2'),
+    url('../fonts/butler_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.navbar {
+    position: static;
+}
+.logo {
+    width: 10%;
+    height: auto;
+}
+
+.search-bar {
+    width: 500px;
+}
+
+.form-inline .input-group {
+    width: 100%;
+}
+
+.form-inline .input-group .input-group-btn button {
+    background-color: #171719;
+}
+
+.form-inline .input-group button[type='submit'] {
+    border-color: #feaf17;
+    color: #feaf17;
+    height: 100%;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.form-inline .input-group button[type='submit'] i {
+    color: #feaf17;
+}
+
+.form-inline .input-group button[type='submit']:hover{
+    background-color: #feaf17;
+}
+
+.form-inline .input-group button[type='submit']:hover i{
+    color: #ffffff;
+}
+
+.nav-item a i {
+    color: #feaf17;
+    border: solid 1px #feaf17;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+.nav-item a i:hover {
+    color: #ffffff;
+    background-color: #feaf17;
+}
+
+@media (min-width: 768px) {
+    .collapse.col-md-3 {
+        max-width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .collapse.show {
+        position: absolute;
+        top: 100%;
+        right:-10.5%;
+    }
+    .collapse.col-md-3 {
+        max-width: 25%;
+    }
+}
+
+
+header nav:last-child .nav-item .nav-link {
+    color: #171719;
+    padding: 0 10px 0 10px;
+    text-transform: uppercase;
+}
+
+.btn-primary{
+    background-color: #feaf17;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    background-color: #171719;
+}
