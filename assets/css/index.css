@@ -1,0 +1,37 @@
+.bg-home1 {
+    background: url("../img/bg-home.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.carousel-title {
+    font-family: 'butlermedium', serif;
+    font-size: 3.5em;
+    margin-bottom: 40px;
+}
+
+.carousel-btext {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.carousel-text {
+    width: 52%;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.carousel-condition {
+    text-decoration: none;
+    color: #171719!important;
+    display: block;
+    margin-bottom: 30px;
+    transition: all ease .2s;
+    cursor: pointer;
+}
+
+.carousel-condition:hover {
+    text-decoration: underline!important;
+}
+
+
