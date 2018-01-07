@@ -85,21 +85,16 @@ header {
     }
 }
 
+.center{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 
 header nav:last-child .nav-item .nav-link {
     color: #171719;
     padding: 0 10px 0 10px;
-}
-
-header nav:last-child .nav-item .nav-link:not(:last-child):hover {
-    color: #171719;
     text-transform: uppercase;
-}
-
-header nav:last-child .nav-item .nav-link:last-child:hover {
-    color: #171719;
-    text-transform: uppercase;
-    padding-left: 5px;
 }
 
 .btn-primary{
@@ -113,4 +108,48 @@ header nav:last-child .nav-item .nav-link:last-child:hover {
     background-color: #171719;
 }
 
+footer{
+    background-color: #eeeeee;
+}
 
+footer div {
+    padding: 15px;
+}
+
+footer nav ul {
+    list-style: none;
+}
+
+
+footer nav ul li {
+    font-size:0.8em;
+}
+
+
+footer nav ul li a{
+    list-style: none;
+    color: #828282;
+    font-size:0.9em;
+}
+
+footer nav ul li a:hover{
+    color: #feaf17;
+}
+
+.hr-footer{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.link{
+    list-style: none;
+    color: #828282;
+}
+
+.link:hover{
+    color: #feaf17;
+}
+
+.small{
+    font-size: 0.8em;
+}

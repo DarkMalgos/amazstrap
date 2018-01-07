@@ -2,7 +2,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light justify-content-between align-items-center">
         <div class="col-md-4 d-flex row align-items-center /*justify-content-center*/">
-            <h1><img class="w-25" src="assets/img/logo.png" alt="logo amazone"></h1>
+            <a href="index.php"><h1><img class="w-25" src="../assets/images/logo.png" alt="logo amazone"></h1></a>
         </div>
         <div class="col-md-8 p-0 d-flex row align-items-center justify-content-between flex-nowrap">
             <form class="form-inline my-2 my-lg-0 col-md-6 p-0">
@@ -12,15 +12,13 @@
                             Catégorie
                         </button>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div role="separator" class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
+                            <a class="dropdown-item" href="liste.php">1</a>
+                            <a class="dropdown-item" href="liste.php">2</a>
+                            <a class="dropdown-item" href="liste.php">3</a>
                         </div>
                     </div>
                     <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                    <button class="btn btn-outline-success m-0 my-sm-0" style="cursor: pointer" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <button class="btn btn-outline-success m-0 my-sm-0" style="cursor: pointer" type="submit" onclick="js_a()"><i class="fa fa-search" aria-hidden="true"></i></button>
                 </div>
             </form>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +27,7 @@
             <div class="collapse navbar-collapse col-md-3" id="navbarSupportedContent">
                 <ul class="navbar-nav w-100 m-0 justify-content-between">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
+                        <a class="nav-link" data-toggle="modal" data-target="#connexionModal"><i class="fa fa-user" aria-hidden="true"></i></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
@@ -48,9 +46,9 @@
                 Catégorie
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">1</a>
-                <a class="dropdown-item" href="#">2</a>
-                <a class="dropdown-item" href="#">3</a>
+                <a class="dropdown-item" href="liste.php">1</a>
+                <a class="dropdown-item" href="liste.php">2</a>
+                <a class="dropdown-item" href="liste.php">3</a>
             </div>
         </div>
         <ul class="navbar-nav">
@@ -65,4 +63,61 @@
             </li>
         </ul>
     </nav>
+    <div class="modal fade" id="connexionModal" tabindex="-1" role="dialog" aria-labelledby="connexionModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="connexionModalLabel">Connexion</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Addresse e-mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="toto@blala.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Mot de passe</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-dismiss="modal">connexion</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p data-dismiss="modal" data-toggle="modal" data-target="#inscriptionModal" style="cursor: pointer">Pas encore inscrit rejoigner-nous !</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="inscriptionModalLabel">Inscription</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">Addresse e-mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="toto@blala.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword2">Mot de passe</label>
+                            <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword3">Confirmer mot de passe</label>
+                            <input type="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-dismiss="modal">connexion</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>

@@ -1,5 +1,5 @@
 .bg-home1 {
-    background: url("../img/bg-home.jpg") center no-repeat;
+    background: url("../images/bg-home.jpg") center no-repeat;
     background-size: cover;
 }
 
@@ -34,4 +34,15 @@
     text-decoration: underline!important;
 }
 
+.card {
+    background: #eef1f8;
+}
+
+section:last-child div:last-child .card {
+    height: 500px;
+}
+
+section:last-child div:first-child .card {
+    height: 50px;
+}
 
