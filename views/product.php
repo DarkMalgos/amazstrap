@@ -9,22 +9,33 @@
     <link rel="stylesheet" href="../assets/fonts/font-awesome-4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css?skjncjjd">
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <main class="container-fluid p-0">
         <?php
             include('header.html');
         ?>
-        <div class="center">
+        <!------------ Breadcrumb ------------>
+        <div class="pt-4">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white">
+                    <li class="breadcrumb-item"><a class="breadcrumb-color" href="index.html">Accueil</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-color" href="#">Tablettes graphiques</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Wacom Intuos Pro Pen</li>
+                </ol>
+            </nav>
+        </div>
+
             <!------------ PICTURE AND INFO PRODUCT ------------>
-            <section class="py-5">
+            <section class="py-2 w-100">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-sm-6">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -53,12 +64,18 @@
                         </div>
                         <figcaption class="figure-caption">Intuos Pro Pen & Touch. Wacom</figcaption>
                     </div>
-                    <div class="col-md-6 pl-lg-5">
+                    <div class="col-sm-6 pl-2 bloc-product">
                         <div class="row">
-                            <div class="col-md-8">
+                            <div class="col-md-9">
                                 <h1 class="product-name">Tablette Graphique - Intuos Pro Pen & Touch</h1>
+                                <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                <i class="fa fa-star yellow" aria-hidden="true"></i>
+                                <i class="fa fa-star grey" aria-hidden="true"></i>
+
                             </div>
-                            <div class="col-md-4 d-flex justify-content-end">
+                            <div class="col-md-3 d-flex ">
                                 <i class="fa fa-heart like" aria-hidden="true"></i>
                             </div>
                         </div>
@@ -89,6 +106,7 @@
                 </div>
             </section>
             <!------------ MORE INFO PRODUCT ------------>
+        <div class="center py-3">
             <section>
                 <div id="accordion" role="tablist">
                     <div class="card">
@@ -222,16 +240,16 @@
             </section>
             <!------------ SLIDER MORE PRODUCTS ------------>
             <section class="p-5">
-                <div id="carouselExampleControls" class="slider-products carousel slide" data-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item carousel-item2 active">
                             <div class="row w-100 justify-content-center">
                                 <img class="d-block rounded w-25 h-100 mx-3" src="../assets/images/more-products1.jpg" alt="First slide">
                                 <img class="d-block rounded w-25 h-100 mx-3" src="../assets/images/more-products2.jpg" alt="First slide">
                                 <img class="d-block rounded w-25 h-100 mx-3" src="../assets/images/more-products3.jpg" alt="First slide">
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item carousel-item2">
                             <div class="row w-100 justify-content-center">
                                 <img class="d-block rounded w-25 h-100 mx-3" src="../assets/images/more-products4.jpg" alt="First slide">
                                 <img class="d-block rounded w-25 h-100 mx-3" src="../assets/images/more-products5.jpg" alt="First slide">
@@ -250,6 +268,18 @@
                 </div>
             </section>
         </div>
+        <?php
+        include('footer.html');
+        ?>
     </main>
+    <script>
+        $('.carousel').carousel({
+            interval: false
+        })
+
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        })
+    </script>
 </body>
 </html>

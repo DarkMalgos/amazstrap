@@ -1,11 +1,16 @@
-.bg-light-grey{
-
+.grey{
+    color: #eeeeee;
 }
 
-.center{
-    margin-left: 5%;
-    margin-right: 5%;
+.yellow{
+    color: #feaf17;
 }
+
+.bg-white{
+    background-color: #ffffff;
+}
+
+
 
 .product-name{
     font-size: 1.7em;
@@ -142,4 +147,27 @@ h2{
     background-size: 100%;
     height: 30px;
     width: 30px;
+}
+
+.breadcrumb-color{
+    color: #171719;
+}
+.breadcrumb-color:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+@media screen and (max-width: 478px){
+    .bloc-product{
+        margin-left:3% !important;
+        margin-right:3%!important;
+    }
+    .btn-primary{
+        width: 100%;
+    }
+
+    .carousel-item2 img{
+        width: 100% !important;
+    }
+
 }
